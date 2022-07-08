@@ -1,0 +1,95 @@
+$default_background_color: rgb(16, 16, 16);
+$default_unselected_text_color: rgb(83, 83, 83);
+$default_header_text_section_color: rgb(149, 154, 149);
+
+/* Direction Right to Left for the scrollbar */
+.custom_sider_layout {
+  z-index: 100;
+  user-select: none;
+  background-color: $default_background_color;
+  direction: rtl;
+}
+
+.ant_sider_collapse_container {
+  position: relative;
+  justify-content: start;
+  width: 100%;
+  height: 64px !important;
+}
+
+.ant_sider_collapse_btn {
+  display: flex;
+  align-items: center !important;
+  font-size: 24px;
+  background-color: $default_background_color;
+  border: transparent !important;
+  color: $default_unselected_text_color;
+  height: 100%;
+
+  &:hover {
+    background-color: $default_background_color;
+    color: #fff;
+  }
+}
+
+.custom_sider_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  background-color: $default_background_color;
+  border-right: none !important;
+  color: $default_unselected_text_color;
+  font-size: 16px;
+  padding: 8px 0;
+
+  & span {
+    transition: 0.2s ease-in-out;
+    display: inline-block;
+    padding-right: 7px;
+    font-size: 16px;
+    border-right: none !important;
+  }
+
+  & li:hover {
+    transition: 0.2s ease-in-out !important;
+    background-color: $default_background_color;
+    font-size: 25px;
+    color: #fff !important;
+  }
+}
+
+.custom_sider_playlist_section {
+  direction: ltr;
+  color: $default_header_text_section_color;
+  font-size: 16px;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+/* Create new Playlist Section */
+.custom_playlist_section {
+  position: relative;
+  bottom: 0%;
+  top: 34%;
+}
+
+.custom_sider_new_playlist_section {
+  color: $default_header_text_section_color;
+  font-size: 16px;
+  padding: 1rem 0rem 1rem 0rem;
+
+  & .new_playlist_btn {
+    background-color: $default_background_color !important;
+    color: $default_unselected_text_color;
+    border: transparent !important;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.custom_sider_divide_topBar {
+  margin: 2rem auto auto auto;
+  border-top: 2px solid rgb(58, 58, 58);
+}

@@ -1,0 +1,16 @@
+{
+  "breadcrumbs.enabled": false,
+
+  "editor.fontSize": 14,
+  "editor.hover.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "\"Fira Code\", Consolas, 'Courier New', monospace",
+  "editor.cursorStyle": "line",
+
+  "workbench.settings.editor": "ui",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "editor.find.autoFindInSelection": "always"
+}

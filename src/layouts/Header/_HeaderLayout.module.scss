@@ -1,0 +1,17 @@
+$default_background_color: rgb(16, 16, 16);
+
+.ant_header_layout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  height: 80px;
+  background-color: $default_background_color;
+}
+
+.header__search_input {
+  position: relative;
+  left: 15%;
+  right: 0;
+}

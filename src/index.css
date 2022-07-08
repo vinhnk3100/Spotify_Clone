@@ -1,0 +1,146 @@
+body {
+  height: 100vh;
+}
+
+/* Root Color - Background color */
+:root {
+  --default_background_color: rgb(16, 16, 16);
+  --default_unselected_text_color: rgb(83, 83, 83);
+  --default_sub_selected_item_color: #009f00;
+  --categories_spotify_choose: rgb(13, 150, 0);
+  --categories_focus_color: rgb(220, 147, 0);
+  --categories_boost_your_mood_color: rgb(231, 71, 30);
+}
+
+/* Ant Sider Part */
+
+.ant-layout-sider {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  max-width: 300px !important;
+  flex: 0 0 300px !important;
+}
+
+/* Direction left to right for Sider Content */
+.custom_sider_layout .ant-layout-sider-children {
+  direction: ltr;
+}
+
+/* ant sider Layout - items */
+
+.custom_sider_items .ant-menu-item-active {
+  transition: 0.2s ease-in-out !important;
+  color: #fff !important;
+  background-color: var(--default_background_color) !important;
+}
+
+.custom_sider_layout .ant-menu-inline .ant-menu-item:after {
+  border: none;
+}
+
+.custom_sider_items .ant-menu-item-selected {
+  color: #fff !important;
+  background-color: var(--default_background_color) !important;
+}
+
+/* ==================== Submenu Sider */
+.custom_sider_items .ant-menu-submenu {
+  width: 100%;
+  background-color: var(--default_background_color) !important;
+}
+
+.custom_sider_items .ant-menu-submenu-title .ant-menu-title-content {
+  font-size: 20px !important;
+}
+
+.custom_sider_items .ant-menu-sub,
+.custom_sider_items .ant-menu-submenu-selected,
+.custom_sider_items .ant-menu-submenu-arrow,
+.custom_sider_items .ant-menu-submenu:hover,
+.custom_sider_items .ant-menu-submenu-title:hover {
+  color: var(--default_unselected_text_color) !important;
+  background-color: var(--default_background_color) !important;
+}
+
+.custom_sider_items .ant-menu-sub .ant-menu-item {
+  padding-left: 24px !important;
+}
+
+/* Home Layout */
+.home_carousel_container .slick-slide {
+  height: 300px !important;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(23, 23, 23);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #003f00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006215;
+}
+
+/* ======================================= Category color section ========================================== */
+
+/* Spotify Choose */
+.categories_spotify_choose {
+  box-shadow: -1px 2px 2px var(--categories_spotify_choose);
+}
+
+.categories_spotify_choose:hover {
+  box-shadow: 1px -1px 3px var(--categories_spotify_choose);
+}
+
+.categories_spotify_choose::after {
+  background-color: var(--categories_spotify_choose);
+}
+
+.categories_spotify_choose:hover::after {
+  background-color: var(--categories_spotify_choose);
+}
+
+/* Focus */
+.categories_focus {
+  box-shadow: -1px 2px 2px var(--categories_focus_color);
+}
+
+.categories_focus:hover {
+  box-shadow: 1px -1px 3px var(--categories_focus_color);
+}
+
+.categories_focus::after {
+  background-color: var(--categories_focus_color);
+}
+
+.categories_focus:hover::after {
+  background-color: var(--categories_focus_color);
+}
+
+/* Boost your mood */
+.categories_boost_your_mood {
+  box-shadow: -1px 2px 2px var(--categories_boost_your_mood_color);
+}
+
+.categories_boost_your_mood:hover {
+  box-shadow: 1px -1px 3px var(--categories_boost_your_mood_color);
+}
+
+.categories_boost_your_mood::after {
+  background-color: var(--categories_boost_your_mood_color);
+}
+
+.categories_boost_your_mood:hover::after {
+  background-color: var(--categories_boost_your_mood_color);
+}
