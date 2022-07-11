@@ -1,8 +1,9 @@
 import React from 'react';
-import { Tooltip } from 'antd';
+import { Tooltip, Card } from 'antd';
 import { CaretRightOutlined } from '@ant-design/icons';
 import PredatorImg from '../../../public/images/Predator.jpg';
 
+const { Meta } = Card;
 export default function AlbumItem(props) {
   const { album, style } = props;
   return (
