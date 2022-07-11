@@ -1,0 +1,26 @@
+$default_background_color: rgb(16, 16, 16);
+$default_background_layout_color: rgb(29, 29, 29);
+$default_title_selected_text_color: #00b327;
+$default_unselected_text_color: rgb(83, 83, 83);
+$default_header_text_section_color: rgb(149, 154, 149);
+$default_card_overlay_unselected_color: rgba(7, 81, 0, 0.511);
+$default_card_overlay_selected_color: rgb(13, 150, 0);
+
+.browse_layout_container {
+  background-color: $default_background_layout_color;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh !important;
+  padding-top: 5rem;
+  padding-right: 3rem;
+}
+
+.layout_title {
+  color: #fff;
+  padding: 2rem 0rem 0rem 3rem;
+}
+
+.tabs_container {
+  color: #fff;
+  padding: 0 0 0 2rem;
+}
